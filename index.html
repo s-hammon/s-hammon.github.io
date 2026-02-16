@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Go Asteroids</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article>
+      <h1>Go Asteroids</h1>
+      <p class="description">
+        A classic asteroids game written in Go and compiled to WebAssembly.
+        Navigate your ship through the treacherous asteroid field, blast the
+        space rocks to bits, and watch out for debris!
+      </p>
+      <p class="img">
+        <iframe src="_wasm.html" width="1280" height="720" allow="autoplay">
+        </iframe>
+      </p>
+      <div class="controls">
+        <h2>Controls</h2>
+        <ul>
+          <li><kbd>W</kbd> - Thrust</li>
+          <li><kbd>A</kbd> - Rotate Left</li>
+          <li><kbd>D</kbd> - Rotate Right</li>
+          <li><kbd>Space</kbd> - Fire</li>
+        </ul>
+      </div>
+    </article>
+  </body>
+</html>

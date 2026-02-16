@@ -1,0 +1,76 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/The_Great_Wave_off_Kanagawa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+}
+
+article {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: rgba(13, 17, 23, 0.85);
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #58a6ff;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border: 2px solid #30363d;
+    border-radius: 6px;
+}
+
+.controls {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(13, 17, 23, 0.9);
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.controls h2 {
+    color: #58a6ff;
+    margin-top: 0;
+}
+
+.controls ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.controls li {
+    margin-bottom: 10px;
+}
+
+.controls kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    line-height: 10px;
+    color: #c9d1d9;
+    vertical-align: middle;
+    background-color: #161b22;
+    border: solid 1px #30363d;
+    border-bottom-color: #30363d;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #30363d;
+}

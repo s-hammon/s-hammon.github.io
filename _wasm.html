@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Asteroids!!!</title>
+    <script src="./wasm_exec.js"></script>
+  </head>
+  <body>
+    <script>
+      const go = new Go();
+      WebAssembly.instantiateStreaming(
+        fetch("./go-asteroids.wasm"),
+        go.importObject,
+      ).then((result) => {
+        go.run(result.instance);
+      });
+    </script>
+  </body>
+</html>
