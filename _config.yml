@@ -1,2 +1,3 @@
 include:
   - _wasm.html
+  - asteroids.html

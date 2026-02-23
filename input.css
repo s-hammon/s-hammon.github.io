@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fujiwhite: #dcd7ba;
+  --color-sumiblack: #1F1F28;
+  --color-sumiink: #16161d;
+  --color-sumiink2: #2a2a37;
+  --color-sumiink3: #363646;
+  --color-sumiink4: #54546d;
+  --color-dragonred: #c4746e;
+  --color-dragonblue: #658594;
+  --color-dragongreen: #98bb6c;
+  --color-fujigray: #727169;
+  --color-autumnred: #c34043;
+  --color-autumngreen: #76946a;
+  --color-springblue: #7fb4ca;
+  --color-springgreen: #98bb6c;
+  --color-springviolet: #938aa9;
+  --color-lightblue: #a3d4d5;
+  --color-winterblue: #252535;
+  --color-winteryellow: #545464;
+  --color-waveaqua: #7aa89f;
+  --color-waveblue1: #223249;
+  --color-waveblue2: #2d4f67;
+  --color-crystalblue: #7e9cd8;
+  --color-katanagray: #717c7c;
+  --color-samuraired: #e82424;
+  --color-sakurapink: #d27e99;
+  --color-carpyellow: #e6c384;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP Custom';
+  src: url('/fonts/noto-sans-jp-v28-latin_japanese-regular.woff2') format('woff2'),
+       url('/fonts/noto-sans-jp-v28-latin_japanese-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

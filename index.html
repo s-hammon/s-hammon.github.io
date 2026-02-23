@@ -2,37 +2,123 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Go Asteroids</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Steven Hammon - ADS</title>
+    <link rel="stylesheet" href="./output.css" />
   </head>
-  <body>
-    <article>
-      <h1>Go Asteroids</h1>
-      <p class="description">
-        A classic asteroids game written in Go and compiled to WebAssembly.
-        Navigate your ship through the treacherous asteroid field, blast the
-        space rocks to bits, and watch out for debris!
-      </p>
-      <p class="img">
-        <iframe src="_wasm.html" width="1280" height="720" allow="autoplay">
-        </iframe>
-      </p>
-      <div class="controls">
-        <h2>Controls</h2>
-        <ul>
-          <li><kbd>W</kbd> - Thrust</li>
-          <li><kbd>A</kbd> - Rotate Left</li>
-          <li><kbd>D</kbd> - Rotate Right</li>
-          <li><kbd>Space</kbd> - Fire</li>
-        </ul>
+  <body class="bg-sumiink text-fujiwhite font-sans antialiiased">
+    <header class="bg-waveblue1 shadow-lg">
+      <div class="container mx-auto p-4 flex justify-between items-center">
+        <h1 class="tet-2xl font-bold">Steven Hammon</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <a href="#about" class="hover:text-fujigray">About</a>
+          </ul>
+        </nav>
       </div>
-    </article>
+    </header>
+    <main class="container mx-auto p-4 py-8">
+      <section
+        id="hero"
+        class="text-center py-4 bg-waveblue1 rounded-lg shadow-xl mb-12"
+      >
+        <img
+          class="mx-auto block h-32 w-32 rounded-full mb-4 ring-4 ring-springviolet"
+          src="./headshot.jpg"
+          alt="Steve in a hakama"
+        />
+        <h2 class="text-4xl font-bold mb-2">Hi, I'm Steve!</h2>
+        <p>Data engineer and backend developer.</p>
+        <p>Building efficient systems and sharing insights.</p>
+      </section>
+      <section id="about" class="mb-12">
+        <h3
+          class="text-3xl font-bold mb-6 text-springblue border-b-2 border-springblue pb-2"
+        >
+          About Me
+        </h3>
+        <div class="bg-waveblue1 rounded-lg p-6 shadow-lg text-fujiwhite">
+          <p class="mb-4">
+            With a strong foundation in Data Engineering, I've specialized in
+            building and maintaining robust data pipelines, ensuring data
+            quality, and optimizing data workflows. My experience spans across
+            various data storage solutions, processing frameworks, and
+            analytical tools.
+          </p>
+          <p class="mb-4">
+            I'm now extending my skills towards Backend Development, focusing on
+            crafting scalable, performant, and resilient web services and APIs.
+            I have created cloud-native services and tools; primarily, I have
+            developed and deployed on GCP, but I am expanding to AWS and Azure.
+            My main technology stack includes:
+            <ul class="list-disc list-inside ml-5">
+              <li>Go</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Docker</li>
+              <li>TS/JS (<i>coming soon...</i>)</li>
+            </ul>
+          </p>
+          <p class="mt-4">
+            I'm always eager to learn and contribute to projects that make a
+            real impact, bringing a data-driven mindset to backend challenges.
+            Check out my project portfolio below!
+          </p>
+        </div>
+      </section>
+      <section id="projects" class="mb-12">
+        <h3
+          class="text-3xl font-bold mb-6 text-springblue border-b-2 border-springblue pb-2"
+        >
+          Projects
+        </h3>
+        <div
+          class="text-fujiwhite grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <div
+            class="bg-waveblue1 rounded-lg p-6 shadow-lg ring-2 ring-springviolet"
+          >
+            <h4 class="text-2xl font-semibold mb-3 text-blue-300">
+              <a
+                class="text-dragonred hover:text-samuraired hover:underline"
+                href="./asteroids.html"
+                >Asteroids</a
+              >
+            </h4>
+            <p class="mb-4">
+              A classic asteroids-like game written in Go's
+              <a
+                href="https://ebitengine.org/"
+                class="text-springblue hover:underline"
+                >Ebitengine</a
+              >.
+            </p>
+          </div>
+          <div
+            class="bg-waveblue1 rounded-lg p-6 shadow-lg ring-2 ring-springviolet"
+          >
+            <h4 class="text-2xl font-semibold mb-3 text-blue-300">
+              <a
+                class="text-dragonred hover:text-samuraired hover:underline"
+                href="https://github.com/alamo-ds/msgraph"
+                >msgraph</a
+              >
+            </h4>
+            <p class="mb-4">
+              A Go SDK & CLI utility for Microsoft's
+              <a
+                href="https://learn.microsoft.com/en-us/graph/api/overview"
+                class="text-springblue hover: underline"
+                >Graph API</a
+              >. Includes client configuration and endpoint builder objects.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-800 text-gray-100 text-center p-4 mt-8">
+      <p>&copy; 2026 Steven Hammon. All rights reserved.</p>
+    </footer>
   </body>
 </html>
