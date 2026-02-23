@@ -1,3 +1,4 @@
 include:
+  - _assets
   - _wasm.html
   - asteroids.html
